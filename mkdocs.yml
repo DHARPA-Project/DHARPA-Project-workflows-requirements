@@ -1,0 +1,10 @@
+site_name: DHARPA - Workflows requirements
+theme:
+  name: material
+markdown_extensions:
+  - tables
+nav:
+  - 'Network Analysis':
+    - 'Directed weighted graph analysis': 'na-directed-weighted.md'
+  - 'Templates':
+    - 'Workflow': 'blank-workflow.md'
