@@ -1,8 +1,7 @@
 name: "Build and deploy documentation pages"
 
 on: [push]
-
-  jobs:
+jobs:
 
   build-docs:
     name: build documentation
