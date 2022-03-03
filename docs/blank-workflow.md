@@ -1,47 +1,81 @@
-# 1. Data
-### Description
 
-### Number of files
+# Name of the example
+## 1. Data
+=== "Description"
+    Description of the data used
 
-### Files type
+=== "Number of files"
+    
 
-### Files alias (for present doc)
+=== "Files type"
+    
 
-### Columns
-#### All
-#### Mandatory columns
-#### Standardised columns
+=== "Files alias"
+    *Files alias is to simplify references to datasets for present doc*
+    
+    
 
-# 2. Workflow
+=== "Columns"
+    
+    ### Table name/Data alias: 
+    
+    #### All
+    *List of all columns*
 
-### Workflow scope
+    ||
+    |---|
+    ||
 
-### Workflow input
+    #### Mandatory
+    *List of mandatory columns (without these columns, module won't work)*
 
-### Workflow output
+    #### Standardised
+    *List of standardised column names*
 
-# 3. Steps considered
 
-### Step Number
 
-### Step name
+## 2. Workflow
 
-### Description
+=== "Workflow scope"
+    *Description of what the workflow achieves*
 
-### Inputs
+    **Workflow curated or created by/from:** 
+    *DH Researcher/Developer/Training/Internet*
+    
+    **DH related example?**
+    *yes/no*
 
-|Name|Type|
-|---|---|
-|   |   |
-|   |   |
+=== "Workflow input"
+    *Description of data that users need to start the workflow*
 
-### Outputs
+=== "Workflow output"
+    *Description of the expected data output for the workflow*
 
-|Name|Type|
-|---|---|
-|   |   |
-|   |   |
+## 3. Steps considered
 
-### Notes
+### Step *number*
 
-### Questions
+=== "Step name"
+    
+
+=== "Description"
+
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |||
+
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |||
+
+=== "Notes"
+    *General notes and UI considerations*
+
+=== "Questions"
+    *Points to clarify regarding the example*
