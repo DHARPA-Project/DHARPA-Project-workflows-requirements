@@ -79,3 +79,7 @@
 
 === "Questions"
     *Points to clarify regarding the example*
+
+
+## 4. Implementation
+*In case of implementation, this section enables to indicate features concerned and link to the relevant DHARPA's Github repo*
