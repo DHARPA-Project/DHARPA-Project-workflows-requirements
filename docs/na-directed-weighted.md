@@ -104,7 +104,7 @@
     |All neighbours|Table(Node Id, array of neighbours ID)|
     |Weighted shortest path|Table(Node Id, array of nodes ID)|
     |Shortest path|Table(Node Id, array of nodes ID)|
-    |Undirected graph computations|Graph diameter</br>if there are multiple sub components:</br>Table of largest component nodes</br>Table of largest component edges</br>Info array for largest component(Number of nodes, number of edges, average in-degree, average out-degree)</br>Array of strongly connected component</br>Subgraph object of strongly connected component|
+    |Undirected graph computations|Graph diameter|
     |Communities|Array of arrays|
 
 === "Notes"
