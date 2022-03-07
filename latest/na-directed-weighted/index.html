@@ -371,15 +371,15 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#step-2" class="md-nav__link">
     Step 2
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -593,15 +593,15 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#step-2" class="md-nav__link">
     Step 2
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -838,15 +838,17 @@ User augmented edges table</br></p>
 <div class="tabbed-block">
 <p>If there’s an error about edges or nodes computation as graph object, user needs to be made aware of it.</br>
 UI should display the list of nodes and edges with attributes.</br>
-For now everything is pre-computed (neighbours, shortest path), but a more efficient strategy may be to generate them on the fly, but the possibility for bi-directionality in such use case needs to be confirmed.</p>
+For now everything is pre-computed (neighbours, shortest path), but a more efficient strategy may be to generate them on the fly, but the possibility for bi-directionality in such use case needs to be confirmed.</br>
+To be verified/thought through: the largest component may be a distinct step, or the same one with different nodes and edges, since it's possible that it would be the same module/viz ran again with only the nodes and edges of largest component.</p>
 </div>
 <div class="tabbed-block">
 <p>Are the undirected computations presented in this notebook all relevant for a directed graph?</br>
-Is the removal of isolated nodes only relevant for viz display or would users need to remove them in graph object?</p>
+Is the removal of isolated nodes only relevant for viz display or would users need to remove them in graph object?</br>
+I read (externally, in a book) that, for example, the density measure need to be considered carefully in some cases, especially for valued graphs, is this relevant here, and where would this info be displayed in the requirements gathering (this will brought up as meeting item as this is more of a general discussion)</p>
 </div>
 </div>
 </div>
-<h2 id="step-2">Step 2</h2>
+<h3 id="step-2">Step 2</h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="4:6"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><input id="__tabbed_4_6" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Name</label><label for="__tabbed_4_2">Description</label><label for="__tabbed_4_3">Inputs</label><label for="__tabbed_4_4">Outputs</label><label for="__tabbed_4_5">Notes</label><label for="__tabbed_4_6">Questions</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
