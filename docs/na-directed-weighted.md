@@ -110,13 +110,14 @@
 === "Notes"
     If there’s an error about edges or nodes computation as graph object, user needs to be made aware of it.</br>
     UI should display the list of nodes and edges with attributes.</br>
-    For now everything is pre-computed (neighbours, shortest path), but a more efficient strategy may be to generate them on the fly, but the possibility for bi-directionality in such use case needs to be confirmed.
+    For now everything is pre-computed (neighbours, shortest path), but a more efficient strategy may be to generate them on the fly, but the possibility for bi-directionality in such use case needs to be confirmed.</br>
+    To be verified/thought through: the largest component may be a distinct step, or the same one with different nodes and edges, since it's possible that it would be the same module/viz ran again with only the nodes and edges of largest component.
 
 === "Questions"
     Are the undirected computations presented in this notebook all relevant for a directed graph?</br>
     Is the removal of isolated nodes only relevant for viz display or would users need to remove them in graph object?
 
-## Step 2
+### Step 2
 
 === "Name"
     Augmentation for nodes and edges table
