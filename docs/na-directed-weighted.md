@@ -89,7 +89,6 @@
     |Col name for source|string|
     |Col name for target|string|
     |Edge attributes|boolean|
-    |Directed|boolean|
 
 === "Outputs"
 
@@ -111,7 +110,8 @@
     If there’s an error about edges or nodes computation as graph object, user needs to be made aware of it.</br>
     UI should display the list of nodes and edges with attributes.</br>
     For now everything is pre-computed (neighbours, shortest path), but a more efficient strategy may be to generate them on the fly, but the possibility for bi-directionality in such use case needs to be confirmed.</br>
-    To be verified/thought through: the largest component may be a distinct step, or the same one with different nodes and edges, since it's possible that it would be the same module/viz ran again with only the nodes and edges of largest component.
+    To be verified/thought through: the largest component may be a distinct step, or the same one with different nodes and edges, since it's possible that it would be the same module/viz ran again with only the nodes and edges of largest component.</br>
+    To be verified/thought through: the conversion to undirected may call to another module that would be for directed graph: I don't think that it will be possible to recursively convert to directed/undirected within same module
 
 === "Questions"
     Are the undirected computations presented in this notebook all relevant for a directed graph?</br>
