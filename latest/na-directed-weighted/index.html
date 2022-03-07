@@ -65,6 +65,8 @@
     
       
     
+      
+    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -394,6 +396,25 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../na-bipartite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Undirected bipartite graph analysis
+  </span>
+
+      </a>
     </li>
   
 
@@ -772,10 +793,6 @@ User augmented edges table</br></p>
 <td>Edge attributes</td>
 <td>boolean</td>
 </tr>
-<tr>
-<td>Directed</td>
-<td>boolean</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -826,7 +843,7 @@ User augmented edges table</br></p>
 </tr>
 <tr>
 <td>Undirected graph computations</td>
-<td>Graph diameter</br>if there are multiple sub components:</br>Table of largest component nodes</br>Table of largest component edges</br>Info array for largest component(Number of nodes, number of edges, average in-degree, average out-degree)</br>Array of strongly connected component</br>Subgraph object of strongly connected component</td>
+<td>Graph diameter</td>
 </tr>
 <tr>
 <td>Communities</td>
@@ -839,12 +856,14 @@ User augmented edges table</br></p>
 <p>If there’s an error about edges or nodes computation as graph object, user needs to be made aware of it.</br>
 UI should display the list of nodes and edges with attributes.</br>
 For now everything is pre-computed (neighbours, shortest path), but a more efficient strategy may be to generate them on the fly, but the possibility for bi-directionality in such use case needs to be confirmed.</br>
-To be verified/thought through: the largest component may be a distinct step, or the same one with different nodes and edges, since it's possible that it would be the same module/viz ran again with only the nodes and edges of largest component.</p>
+To be verified/thought through: the largest component may be a distinct step, or the same one with different nodes and edges, since it's possible that it would be the same module/viz ran again with only the nodes and edges of largest component.</br>
+To be verified/thought through: the conversion to undirected may call to another module that would be for directed graph: I don't think that it will be possible to recursively convert to directed/undirected within same module</p>
 </div>
 <div class="tabbed-block">
 <p>Are the undirected computations presented in this notebook all relevant for a directed graph?</br>
 Is the removal of isolated nodes only relevant for viz display or would users need to remove them in graph object?</br>
-I read (externally, in a book) that, for example, the density measure need to be considered carefully in some cases, especially for valued graphs, is this relevant here, and where would this info be displayed in the requirements gathering (this will brought up as meeting item as this is more of a general discussion)</p>
+I read (externally, in a book) that, for example, the density measure need to be considered carefully in some cases, especially for valued graphs, is this relevant here, and where would this info be displayed in the requirements gathering (this will brought up as meeting item as this is more of a general discussion)</br>
+Part about convert graph to undirected to be clarified (is there a reason subgraphs are computed in this section?)</p>
 </div>
 </div>
 </div>
@@ -922,13 +941,13 @@ I read (externally, in a book) that, for example, the density measure need to be
       
       
         
-        <a href="../blank-workflow/" class="md-footer__link md-footer__link--next" aria-label="Next: Workflow" rel="next">
+        <a href="../na-bipartite/" class="md-footer__link md-footer__link--next" aria-label="Next: Undirected bipartite graph analysis" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Workflow
+              Undirected bipartite graph analysis
             </div>
           </div>
           <div class="md-footer__button md-icon">
