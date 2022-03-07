@@ -116,7 +116,8 @@
 === "Questions"
     Are the undirected computations presented in this notebook all relevant for a directed graph?</br>
     Is the removal of isolated nodes only relevant for viz display or would users need to remove them in graph object?</br>
-    I read (externally, in a book) that, for example, the density measure need to be considered carefully in some cases, especially for valued graphs, is this relevant here, and where would this info be displayed in the requirements gathering (this will brought up as meeting item as this is more of a general discussion)
+    I read (externally, in a book) that, for example, the density measure need to be considered carefully in some cases, especially for valued graphs, is this relevant here, and where would this info be displayed in the requirements gathering (this will brought up as meeting item as this is more of a general discussion)</br>
+    Part about convert graph to undirected to be clarified (is there a reason subgraphs are computed in this section?)
 
 ### Step 2
 
