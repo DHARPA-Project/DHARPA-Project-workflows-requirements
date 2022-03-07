@@ -9,5 +9,6 @@ markdown_extensions:
 nav:
   - 'Network Analysis':
     - 'Directed weighted graph analysis': 'na-directed-weighted.md'
+    - 'Undirected bipartite graph analysis': 'na-bipartite.md'
   - 'Templates':
     - 'Workflow': 'blank-workflow.md'
