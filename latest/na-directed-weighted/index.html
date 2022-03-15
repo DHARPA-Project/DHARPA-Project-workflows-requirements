@@ -739,12 +739,85 @@
 </div>
 </div>
 <h2 id="2-workflow">2. Workflow</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Workflow scope</label><label for="__tabbed_2_2">Workflow input</label><label for="__tabbed_2_3">Workflow output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Workflow scope</label><label for="__tabbed_2_2">Examples of research questions</label><label for="__tabbed_2_3">Workflow text summary</label><label for="__tabbed_2_4">Workflow input</label><label for="__tabbed_2_5">Workflow output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Directed weighted network analysis, nodes and edges augmentation</p>
 <p><strong>Workflow curated or created by:</strong> DH researcher</p>
 <p><strong>DH related example?</strong> yes</p>
+</div>
+<div class="tabbed-block">
+<p><em>Please list a few examples of research questions that this workflow could help with</em></p>
+</div>
+<div class="tabbed-block">
+<p>(from https://github.com/DHARPA-Project/NetworkXAnalysis)</br>
+<strong>1. Import data</strong>
+<ul>
+<li>Alternative data import</li>
+Extract nodes and edges from single file
+<li>Import data from edge list using pandas</li>
+Generate graph from edgelist
+<li>Add nodes and nodes attributes</li>
+</ul>
+<strong>2. Get information about the generated graph and its properties</strong>
+<ul>
+<li>Test if nodes and edges correctly imported</li>
+<li>Get number of nodes and edges</li>
+<li>Get info about the augmented graph: average in degree, average out degree</li>
+</ul>
+<strong>3. Make some basic calculations to obtain more graph properties</strong>
+<ul>
+<li>Density</li>
+<li>Find neighbors, successors and predecessors of individual nodes</li>
+<li>Find the shortest path between two nodes, display shortest path length</li>
+</ul>
+<strong>4. Visualize the graph</strong>
+<ul>
+<li>Export graph to graphml file</li>
+<li>Import graphml with igraph</li>
+<li>Use Fruchterman-Reingold layout and draw with igraph</li>
+</ul>
+<strong>5. Find largest component</strong>
+<ul>
+<li>Convert graph to undirected</li>
+<li>Print info about the graph in its undirected form: number of nodes, number of edges, average degree</li>
+<li>Find out if there is more than 1 component in graph</li>
+<li>Get list of connected components</li>
+<li>Get largest connected component and display its nodes</li>
+<li>Create subgraph (which will be returned as an indirect graph)</li>
+<li>Get info: number of nodes, number of edges, average degree</li>
+<li>Use largest component to create a directed subgraph</li>
+<li>Get directed subgraph info: number of nodes, number of edges, average in degree, average out degree</li>
+<li>Make some calculations for undirected graphs: diameter</li>
+<li>Find clusters that have strong connectivity</li>
+<li>Visualise clusters that have strong connectivity</li>
+<li>Alternate method: find and remove isolated nodes to create a subgraph, and then display number of nodes, edges, in degree, out degree, and density</li>
+</ul>
+<strong>6. Make some centrality calculations</strong>
+<ul>
+<li>Calculate degrees, in degree, weighted degree, weighted in-degree, weighted out degree, and add as attribute, sort nodes by the metrics just calculated / display top n nodes according to these metrics</li>
+<li>Calculate, degree centrakity, betweenness centrality, eigenvector centrality, add as attributes, sort, print top n nodes</li>
+</ul>
+<strong>7. Community detection</strong>
+<ul>
+<li>export nx graph to graphml file</li>
+<li>create new infograph graph from file</li>
+<li>use Fruchterman-Reingold layout</li>
+<li>show list of unconnected nodes and remove them</li>
+<li>draw the graph with igraph</li>
+<li>export data to gefx and wisualise in Gephi</li>
+</ul>
+<strong>8. Updating graph</strong>
+<ul>
+<li>Extract nodes and edges from additional file</li>
+<li>Display and sort new nodes</li>
+<li>Add new nodes to graph</li>
+<li>Display graph info: number of nodes, number of edges, average in degree, average out degree</li>
+<li>Create new graph from new edges and add them to old graph</li>
+<li>Display graph info: number of nodes, number of edges, average in degree, average out degree</li>
+<li>Visualise graph</li>
+<li>Get largest component from new graph and display info: number of nodes, edges, average in degree, average out degree</li>
+</ul></p>
 </div>
 <div class="tabbed-block">
 <p>Nodes and edges tables</p>
