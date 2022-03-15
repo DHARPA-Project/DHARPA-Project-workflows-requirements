@@ -45,8 +45,11 @@
     **DH related example?**
     *yes/no*
 
-=== "Example of research questions"
+=== "Examples of research questions"
     *Please list a few examples of research questions that this workflow could help with*
+
+=== "Workflow text summary"
+    *Description of the workflow steps in a text form*
 
 === "Workflow input"
     *Description of data that users need to start the workflow*
