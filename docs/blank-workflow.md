@@ -45,6 +45,9 @@
     **DH related example?**
     *yes/no*
 
+=== "Example of research questions"
+    *Please list a few examples of research questions that this workflow could help with*
+
 === "Workflow input"
     *Description of data that users need to start the workflow*
 
@@ -75,10 +78,8 @@
     |||
 
 === "Notes"
-    *General notes and UI considerations*
+    *Research (e.g. are there examples of specific research questions for this step, or any research considerations to take into account) and/or UI considerations (e.g. will users need to make a critical decision at this step, which would need to be emphasized in the UI)*
 
-=== "Questions"
-    *Points to clarify regarding the example*
 
 
 ## 4. Implementation
