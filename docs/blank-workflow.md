@@ -81,7 +81,11 @@
     |||
 
 === "Notes"
-    *Research (e.g. are there examples of specific research questions for this step, or any research considerations to take into account) and/or UI considerations (e.g. will users need to make a critical decision at this step, which would need to be emphasized in the UI)*
+    *Research (e.g. are there examples of specific research questions for this step, or any research considerations to take into account) and/or UI considerations (e.g. will users need to make a critical decision at this step, which would need to be emphasized in the UI)*</br>
+    *Performance considerations (UI or back-end)*
+
+=== "Links to useful ressources"
+    *For example, links to UI or visualzation examples*
 
 
 
