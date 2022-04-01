@@ -7,6 +7,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
 nav:
+  - 'Topic modeling':
+    - 'LDA': 'lda-gensim.md'
   - 'Network Analysis':
     - 'Directed weighted graph analysis': 'na-directed-weighted.md'
     - 'Undirected bipartite graph analysis': 'na-bipartite.md'
