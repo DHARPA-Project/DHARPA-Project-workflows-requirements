@@ -70,7 +70,8 @@
     **1. Import data**
     <ul>
     <li>Alternative data import</li>
-    Extract nodes and edges from single file
+    Extract nodes and edges from single file</br>
+    Preview nodes and edges list
     <li>Import data from edge list using pandas</li>
     Generate graph from edgelist
     <li>Add nodes and nodes attributes</li>
