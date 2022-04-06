@@ -169,8 +169,6 @@
     |files_name|string|
     |date|string|
     |publication_name|string|
-    |start_date|string or date|
-    |end_date|string or date|
 
 === "Outputs"
 
@@ -179,21 +177,22 @@
     |files_name|string|
     |date|string|
     |publication_name|string|
+    |document|string|
 
 === "Notes"
-    Visualization would assist users filtering their data, they would see the modification on viz before validating the inputs.
-    
+    Not sure if the text would be best added here or at the first step.
+
 
 === "Links to useful ressources"
-    Visualization: https://observablehq.com/@dharpa-project/timestamped-corpus
+
         
 ### Step 5
 
 === "Step name"
-    Add text content in dataset
+    Removing stop words, punctuation, short words
     
 === "Description"
-    Retrieve .txt files content and add to dataset, if not done at step 1
+    Perform operations on the text to focus on the tokens that bring an interpretative value
 
 === "Inputs"
 
@@ -202,8 +201,9 @@
     |files_name|string|
     |date|string|
     |publication_name|string|
-    |start_date|string or date|
-    |end_date|string or date|
+    |stop_words_list|array or csv|
+    |text_processing_options|array or object|
+    |document|string|
 
 === "Outputs"
 
@@ -212,13 +212,259 @@
     |files_name|string|
     |date|string|
     |publication_name|string|
+    |document|string|
+
+### Step 6
+
+=== "Step name"
+    Lemmatize
+    
+=== "Description"
+    Lemmatize corpus
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |files_name|string|
+    |date|string|
+    |publication_name|string|
+    |language|string|
+    |document|string|
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |files_name|string|
+    |date|string|
+    |publication_name|string|
+    |document|string|
 
 === "Notes"
-    Visualization would assist users filtering their data, they would see the modification on viz before validating the inputs.
+
+=== "Links to useful ressources"
+
+### Step 7
+
+=== "Step name"
+    LDA
+    
+=== "Description"
+    Run LDA
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |files_name|string|
+    |date|string|
+    |publication_name|string|
+    |document|string|
+    |filter_extremes|array or boolean|
+    |hyper_parameters|array or object|
+    |number_of_topics|integer or boolean|
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |models|array or object|
+    |scores|array or object|
+
+=== "Notes"
+    This step needs to be refined while iterating with code/ui
+
+=== "Links to useful ressources"
+
+### Step 8
+
+=== "Step name"
+    Number of topics
+    
+=== "Description"
+    Decide on number of topics
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |models|array of arrays or object|
+    |scores|array or object|
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |model|array|
+    |score|float|
+
+=== "Notes"
+
+=== "Links to useful ressources"
+
+### Step 9
+
+=== "Step name"
+    Number of topics
+    
+=== "Description"
+    Decide on number of topics
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |models|array of arrays or object|
+    |scores|array or object|
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |model|array|
+    |score|float|
+
+=== "Notes"
+
+
+=== "Links to useful ressources"
+
+### Step 10
+
+=== "Step name"
+    Number of topics
+    
+=== "Description"
+    Decide on number of topics
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |models|array of arrays or object|
+    |scores|array or object|
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |model|array|
+    |score|float|
+
+=== "Notes"
+
+
+=== "Links to useful ressources"
+
+### Step 11
+
+=== "Step name"
+    Topic visualisation
+    
+=== "Description"
+    Visualize topics with pyLDAvis python package
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+
+
+=== "Notes"
+    Inputs and outputs to be determined
+
+=== "Links to useful ressources"
+
+### Step 12
+
+=== "Step name"
+    Topics naming and categorisation
+    
+=== "Description"
+    
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+
+
+=== "Notes"
+    Inputs and outputs to be determined
+
+=== "Links to useful ressources"
+
+### Step 13
+
+=== "Step name"
+    Distribution computations
+    
+=== "Description"
+    Compute ditributions (per topic and per document, per topic for the whole corpus, per publication)
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |model|object or string (to be verified)|
+    |corpus|document list with content|
+
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |distribution_per_topic_per_doc|table|
+    |distribution_per_topic_whole_corpus|table|
+    |distribution_per_publication|table|
+
+
+=== "Notes"
     
 
 === "Links to useful ressources"
-    Visualization: https://observablehq.com/@dharpa-project/timestamped-corpus
+
+### Step 14
+
+=== "Step name"
+    Distribution per topic for the whole corpus
+    
+=== "Description"
+    
+
+=== "Inputs"
+
+    |Name|Type|
+    |---|---|
+    |corpus|document list with content|
+    |distribution_computations|table|
+
+
+=== "Outputs"
+
+    |Name|Type|
+    |---|---|
+    |distribution_computations|table|
+
+
+=== "Notes"
+    
+
+=== "Links to useful ressources"
+
         
 
 
