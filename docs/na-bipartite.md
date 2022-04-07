@@ -1,5 +1,5 @@
 
-# Bipartite graph
+# Bipartite graph with projection
 ## 1. Data
 === "Description"
     Network data concerning soldiers and the units they served in
@@ -71,12 +71,17 @@
 ## 2. Workflow
 
 === "Workflow scope"
-    Undirected bipartite network analysis
-    Undirected multigraph network analysis
+    Performing network analysis tasks on a bipartite graph and creating a projection from it
 
     **Workflow curated or created by:** DH researcher
     
     **DH related example?** yes
+    
+=== "Examples of research questions"
+    Did exposure to other soldiers serving in the same unit at the same time have an impact on their later lives (marital status, occupational change, and spatial mobility)? Did social connections made during the war have a statistically relevant impact in any of those choices? 
+
+=== "Workflow text summary"
+    One of articles I cite all the time discusses the importance of the social connections made between soldiers during the war on their later lives (i.e. all things being equal, if someone from your Great War army unit was employed in 1930, you yourself would be more likely to be employed). However, a recent article criticizing cliometrics in WWI studies noted that such studies just assume that an individual was in his first (or last) unit for the entirety of his in service, which was rarely true. Arguably, if we want a measure of how much influence Person A’s wartime connections had, the measurement of that influence should account for how strong those connections might have been, perhaps as proxied by how long Person A was actually in contact with those other people (from arpa channel discussion 18th May 2021).
 
 === "Workflow input"
     Nodes (2 tables) and edges (1 table)
@@ -85,6 +90,7 @@
     Computationally augmented nodes table</br>
     User augmented nodes table</br>
     User augmented edges table</br>
+    New one-mode-graph edges table computed through projection</br>
 
 ## 3. Steps considered
 
