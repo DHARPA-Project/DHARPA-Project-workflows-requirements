@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#directed-weighted-graph" class="md-skip">
+        <a href="#one-mode-graph-directed-and-weighted" class="md-skip">
           Skip to content
         </a>
       
@@ -708,7 +708,7 @@
                 
 
 
-<h1 id="directed-weighted-graph">Directed weighted graph</h1>
+<h1 id="one-mode-graph-directed-and-weighted">One mode graph, directed and weighted</h1>
 <h2 id="1-data">1. Data</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Description</label><label for="__tabbed_1_2">Number of files</label><label for="__tabbed_1_3">Files type</label><label for="__tabbed_1_4">Files alias</label><label for="__tabbed_1_5">Columns</label></div>
 <div class="tabbed-content">
@@ -803,12 +803,15 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Workflow scope</label><label for="__tabbed_2_2">Examples of research questions</label><label for="__tabbed_2_3">Workflow text summary</label><label for="__tabbed_2_4">Workflow input</label><label for="__tabbed_2_5">Workflow output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Directed weighted network analysis, nodes and edges augmentation</p>
+<p>Performing network analysis tasks on a one-mode network</p>
 <p><strong>Workflow curated or created by:</strong> DH researcher</p>
 <p><strong>DH related example?</strong> yes</p>
 </div>
 <div class="tabbed-block">
-<p><em>Please list a few examples of research questions that this workflow could help with</em></p>
+<p>What are the most important nodes (journals) in the network and how are they related to each other?
+What are the most likely channels of information in the network? Are there any bottlenecks? Are there any information hubs?
+What does the network structure look like? Are there any discernable clusters that correspond to journal characteristics, or are the links evenly distributed? Are there isolated node clusters that are not connected to the main network? 
+What does the dynamics of the network look like? Are there groups of nodes in which information flow forms disctinctly different patterns?</p>
 </div>
 <div class="tabbed-block">
 <p>(from https://github.com/DHARPA-Project/NetworkXAnalysis)</br>
@@ -858,7 +861,7 @@ Generate graph from edgelist
 <strong>6. Make some centrality calculations</strong>
 <ul>
 <li>Calculate degrees, in degree, weighted degree, weighted in-degree, weighted out degree, and add as attribute, sort nodes by the metrics just calculated / display top n nodes according to these metrics</li>
-<li>Calculate, degree centrakity, betweenness centrality, eigenvector centrality, add as attributes, sort, print top n nodes</li>
+<li>Calculate, degree centrality, betweenness centrality, eigenvector centrality, add as attributes, sort, print top n nodes</li>
 </ul>
 <strong>7. Community detection</strong>
 <ul>
