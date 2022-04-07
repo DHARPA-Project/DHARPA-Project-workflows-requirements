@@ -1,5 +1,5 @@
 
-# Directed weighted graph
+# One mode graph, directed and weighted
 ## 1. Data
 === "Description"
     Network data from journals in the field of psychiatry and allied fields
@@ -56,14 +56,17 @@
 ## 2. Workflow
 
 === "Workflow scope"
-    Directed weighted network analysis, nodes and edges augmentation
+    Performing network analysis tasks on a one-mode network
 
     **Workflow curated or created by:** DH researcher
     
     **DH related example?** yes
 
 === "Examples of research questions"
-    *Please list a few examples of research questions that this workflow could help with*
+    What are the most important nodes (journals) in the network and how are they related to each other?
+    What are the most likely channels of information in the network? Are there any bottlenecks? Are there any information hubs?
+    What does the network structure look like? Are there any discernable clusters that correspond to journal characteristics, or are the links evenly distributed? Are there isolated node clusters that are not connected to the main network? 
+    What does the dynamics of the network look like? Are there groups of nodes in which information flow forms disctinctly different patterns?
 
 === "Workflow text summary"
     (from https://github.com/DHARPA-Project/NetworkXAnalysis)</br>
@@ -113,7 +116,7 @@
     **6. Make some centrality calculations**
     <ul>
     <li>Calculate degrees, in degree, weighted degree, weighted in-degree, weighted out degree, and add as attribute, sort nodes by the metrics just calculated / display top n nodes according to these metrics</li>
-    <li>Calculate, degree centrakity, betweenness centrality, eigenvector centrality, add as attributes, sort, print top n nodes</li>
+    <li>Calculate, degree centrality, betweenness centrality, eigenvector centrality, add as attributes, sort, print top n nodes</li>
     </ul>
     **7. Community detection**
     <ul>
